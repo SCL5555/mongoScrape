@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Scraping With Mongoose</title>
+    <style>
+      body { background-color: #F2F6D0 }
+      #wrapper {
+        width: 960px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 5%;
+      }
+      #articles {
+        display: inline-block;
+        overflow: auto;
+        width: 60%;
+        height: 700px;
+      }
+      #notes {
+        float: right;
+        width: 30%;
+      }
+      textarea, input {
+        display: block;
+        width: 100%;
+        /*background-color: #FCF5C7;*/
+      }
+      input {
+        height: 36px;
+        font-size: 24px;
+      }
+      textarea {
+        height: 200px;
+        font-size: 18px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="wrapper">
+      <h1>Article Scraper</h1>
+      <h4>Click an article to view its notes</h4>
+      <div class="card">
+        <div class="card-body">
+            <div id="articles"></div>
+            <div id="notes"></div>
+        </div>
+      </div>
+      
+      
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous"> 
+    <script src="app.js"></script>
+  </body>
+</html>
